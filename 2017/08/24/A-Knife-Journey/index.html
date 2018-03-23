@@ -10,7 +10,7 @@
   
   <title>
     
-      YU YANGYANG
+      A Knife Journey | YU YANGYANG
     
   </title>
   <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -123,61 +123,101 @@
   </div>
 </header>
 
-    <div id="article-banner">
-</div>
-<main class="app-body" id="archives">
-  
-  
-  
-    <section class="time-section">
-  <h1 class="section-year">
-    2018
-  </h1>
-  <div class="section-list">
     
+<main class="app-body flex-box">
+  <!-- Article START -->
+  <article class="post-article">
+    <section class="markdown-content"><p><br></p>
+<h2 id="A-Knife-Journey"><a href="#A-Knife-Journey" class="headerlink" title="A Knife Journey"></a>A Knife Journey</h2><h3 id="vedio"><a href="#vedio" class="headerlink" title="vedio"></a>vedio</h3><h3 id="2017-8"><a href="#2017-8" class="headerlink" title="2017.8"></a>2017.8</h3><p><br><br><img src="http://p60zd6i25.bkt.clouddn.com/3.jpg" alt=""><br><img src="http://p60zd6i25.bkt.clouddn.com/003.jpg" alt=""><br><img src="http://p60zd6i25.bkt.clouddn.com/007.jpg" alt=""><br><img src="http://p60zd6i25.bkt.clouddn.com/16.jpg" alt=""><br><br></p>
+<h3 id="一把菜刀从商品转变为生活用品，从超市进入公共空间，最后抵达厨房砧板，我想看看人们的反应是什么。"><a href="#一把菜刀从商品转变为生活用品，从超市进入公共空间，最后抵达厨房砧板，我想看看人们的反应是什么。" class="headerlink" title="一把菜刀从商品转变为生活用品，从超市进入公共空间，最后抵达厨房砧板，我想看看人们的反应是什么。"></a>一把菜刀从商品转变为生活用品，从超市进入公共空间，最后抵达厨房砧板，我想看看人们的反应是什么。</h3></section>
+    <!-- Tags START -->
     
-      <div class="section-list-item">
-        <a href="/yuyangyangart.github.io/2018/03/24/壁虎漫步/" class="archive-title">壁虎漫步</a>
-        <p class="archive-date">03-24</p>
-      </div>
-    
-      <div class="section-list-item">
-        <a href="/yuyangyangart.github.io/2018/03/22/风景无言以对/" class="archive-title">风景无言以对</a>
-        <p class="archive-date">03-22</p>
-      </div>
-    
-      <div class="section-list-item">
-        <a href="/yuyangyangart.github.io/2018/02/15/更加流行的大卫/" class="archive-title">更加流行的大卫</a>
-        <p class="archive-date">02-15</p>
-      </div>
-    
-  </div>
-</section>
-  
-    <section class="time-section">
-  <h1 class="section-year">
-    2017
-  </h1>
-  <div class="section-list">
-    
-    
-      <div class="section-list-item">
-        <a href="/yuyangyangart.github.io/2017/08/24/A-Knife-Journey/" class="archive-title">A Knife Journey</a>
-        <p class="archive-date">08-24</p>
-      </div>
-    
-  </div>
-</section>
-  
+  <!--打赏-->
+  <!-- Article END -->
 </main>
-
 <script>
   (function () {
-    var url = 'http://yuyangyang.red/myblog/archives/2018/03/index.html';
-    $('#article-banner').geopattern(url);
-    $('.header').removeClass('fixed-header');
+    var url = 'http://yuyangyang.red/myblog/2017/08/24/A-Knife-Journey/';
+    var banner = ''
+    if (banner !== '' && banner !== 'undefined' && banner !== 'null') {
+      $('#article-banner').css({
+        'background-image': 'url(' + banner + ')'
+      })
+    } else {
+      $('#article-banner').geopattern(url)
+    }
+    $('.header').removeClass('fixed-header')
+
+     // error image
+    $(".markdown-content img").on('error', function() {
+      $(this).attr('src', 'http://file.muyutech.com/error-img.png')
+      $(this).css({
+        'cursor': 'default'
+      })
+    })
+
+    // zoom image
+    $(".markdown-content img").on('click', function() {
+      var src = $(this).attr('src')
+      if (src !== 'http://file.muyutech.com/error-img.png') {
+        var imageW = $(this).width()
+        var imageH = $(this).height()
+        
+        var zoom = ($(window).width() * 0.95 / imageW).toFixed(2)
+        zoom = zoom < 1 ? 1 : zoom
+        zoom = zoom > 2 ? 2 : zoom
+        var transY = (($(window).height() - imageH) / 2).toFixed(2)
+
+        $('body').append('<div class="image-view-wrap"><div class="image-view-inner"><img src="'+ src +'" /></div></div>')
+        $('.image-view-wrap').addClass('wrap-active')
+        $('.image-view-wrap img').css({
+          'width': `${imageW}`,
+          'transform': `translate3d(0, ${transY}px, 0) scale3d(${zoom}, ${zoom}, 1)`
+        })
+        $('html').css('overflow', 'hidden')
+
+        $('.image-view-wrap').on('click', function() {
+          $(this).remove()
+          $('html').attr('style', '')
+        })
+      }
+    })
+
+    // qrcode
+    var qr = new QRious({
+      element: document.getElementById('share-qrcode'),
+      value: document.location.href
+    });
+
+    // gitment
+    var gitmentConfig = "";
+    if (gitmentConfig !== 'undefined') {
+      var gitment = new Gitment({
+        id: "A Knife Journey",
+        owner: "",
+        repo: "",
+        oauth: {
+          client_id: "",
+          client_secret: ""
+        },
+        theme: {
+          render(state, instance) {
+            const container = document.createElement('div')
+            container.lang = "en-US"
+            container.className = 'gitment-container gitment-root-container'
+            container.appendChild(instance.renderHeader(state, instance))
+            container.appendChild(instance.renderEditor(state, instance))
+            container.appendChild(instance.renderComments(state, instance))
+            container.appendChild(instance.renderFooter(state, instance))
+            return container;
+          }
+        }
+      })
+      gitment.render(document.getElementById('comments'))
+    }
   })();
 </script>
+
     
     <footer class="app-footer">
   <p class="copyright">
