@@ -213,7 +213,7 @@ h2.article-head {
   color: #34495e;
 }
 .header-container {
-  max-width: 100%;
+  max-width: 1200px;
   height: 40px;
   margin: 0 auto;
   padding: 10px 40px;
@@ -364,7 +364,7 @@ h2.article-head {
 }
 .markdown-content,
 .article-summary {
-  overflow-y: auto;
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 .markdown-content pre,
