@@ -256,17 +256,17 @@ h2.article-head {
   margin: 0 8px;
 }
 .item-link {
-  height: 40px;
-  line-height: 40px;
+  height: 20px;
+  line-height: 20px;
   text-decoration: none;
   color: #fff;
   padding-bottom: 3px;
 }
 .item-link:hover {
-  border-bottom: 3px solid #42b983;
+  border-bottom: 2px solid #42b983;
 }
 .active {
-  border-bottom: 3px solid #42b983;
+  border-bottom: 2px solid #42b983;
 }
 .menu {
   display: none;
