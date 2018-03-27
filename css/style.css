@@ -50,7 +50,7 @@ pre {
   padding: 2em 1em;
   margin: 0 auto;
   height: 100%;
-  max-width: 980px;
+  max-width: 1180px;
   position: relative;
   opacity: 0;
   transform: translateY(-20px);
@@ -78,10 +78,10 @@ pre {
   white-space: nowrap;
 }
 .article-card {
-  padding-bottom: 0px;
+  padding-bottom: 20px;
 }
 .article-card:first-child {
-  margin-top: 0px;
+  margin-top: 60px;
 }
 h2.article-head {
   font-size: 1.6em;
@@ -575,7 +575,7 @@ h2.article-head {
   margin: 10px 0;
 }
 #archives:before {
-  position: absolute;
+  position: 80%;
   top: 2em;
   bottom: 1em;
   left: 30px;
