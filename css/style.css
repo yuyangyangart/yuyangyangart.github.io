@@ -94,7 +94,7 @@ h2.article-head {
   border-bottom: 2px solid #1e1616;
 }
 .article-date {
-  color: #fff;
+  color: #e3e3e3;
   margin: 10px 0;
   font-size: 0.9em;
 }
@@ -146,7 +146,7 @@ h2.article-head {
   display: block;
   margin-top: 10px;
   text-align: center;
-  color: #fff;
+  color: #e3e3e3;
   font-style: italic;
 }
 .qrcode {
@@ -158,7 +158,7 @@ h2.article-head {
   width: 8em;
   height: 8em;
   padding: 5px;
-  box-shadow: 0 0 1px #e3e3e3;
+  box-shadow: 0 0 1px #fff;
 }
 #uyan_frame {
   margin-top: 20px;
@@ -207,7 +207,7 @@ h2.article-head {
   color: #1e1616;
 }
 .fixed-header .menu .icon-bar {
-  background-color: #fff;
+  background-color: #e3e3e3;
 }
 .fixed-header .item-link {
   color: #1e1616;
@@ -331,7 +331,7 @@ h2.article-head {
 }
 .menu-link {
   text-decoration: none;
-  color: #fff;
+  color: #e3e3e3;
 }
 .mobile-active {
   color: #1e1616;
@@ -346,7 +346,7 @@ h2.article-head {
   font-size: 0.9em;
 }
 .copyright {
-  color: #fff;
+  color: #e3e3e3;
   line-height: 1.5;
 }
 .guide-pager {
@@ -628,7 +628,7 @@ h2.article-head {
   padding-left: 10px;
 }
 .time-section .section-list .section-list-item .archive-date {
-  color: #fff;
+  color: #e3e3e3;
   font-size: 0.9em;
   margin: 5px 0;
 }
