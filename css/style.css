@@ -94,7 +94,7 @@ h2.article-head {
   border-bottom: 2px solid #1e1616;
 }
 .article-date {
-  color: #7f8c8d;
+  color: #fff;
   margin: 10px 0;
   font-size: 0.9em;
 }
@@ -146,7 +146,7 @@ h2.article-head {
   display: block;
   margin-top: 10px;
   text-align: center;
-  color: #7f8c8d;
+  color: #fff;
   font-style: italic;
 }
 .qrcode {
@@ -207,7 +207,7 @@ h2.article-head {
   color: #1e1616;
 }
 .fixed-header .menu .icon-bar {
-  background-color: #7f8c8d;
+  background-color: #fff;
 }
 .fixed-header .item-link {
   color: #1e1616;
@@ -331,7 +331,7 @@ h2.article-head {
 }
 .menu-link {
   text-decoration: none;
-  color: #7f8c8d;
+  color: #fff;
 }
 .mobile-active {
   color: #1e1616;
@@ -346,7 +346,7 @@ h2.article-head {
   font-size: 0.9em;
 }
 .copyright {
-  color: #7f8c8d;
+  color: #fff;
   line-height: 1.5;
 }
 .guide-pager {
@@ -628,7 +628,7 @@ h2.article-head {
   padding-left: 10px;
 }
 .time-section .section-list .section-list-item .archive-date {
-  color: #7f8c8d;
+  color: #fff;
   font-size: 0.9em;
   margin: 5px 0;
 }
