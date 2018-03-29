@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Source Sans Pro';
-  src: url("../fonts/SourceSansPro.ttf");
+  font-family: 'Roboto Mono';
+  src: url("../fonts.google.com/specimen/Roboto+Mono");
 }
 ::selection {
   background: #1e1616;
