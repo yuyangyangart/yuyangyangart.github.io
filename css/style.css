@@ -47,7 +47,7 @@ pre {
   transform: unset !important;
 }
 .app-body {
-  padding: 2em 1em;
+  padding: 6em 1em;
   margin: 0 auto;
   height: 100%;
   max-width: 1180px;
@@ -237,7 +237,7 @@ h2.article-head {
   align-items: center;
   float: left;
   font-weight: 500;
-  color: #fff;
+  color: #0b1013;
   font-size: 1.5em;
   line-height: 40px;
 }
@@ -259,7 +259,7 @@ h2.article-head {
   height: 40px;
   line-height: 40px;
   text-decoration: none;
-  color: #fff;
+  color: #0b1013;
   padding-bottom: 3px;
 }
 .item-link:hover {
