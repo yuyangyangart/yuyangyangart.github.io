@@ -48,7 +48,7 @@ pre {
 }
 .app-body {
   padding-top: 3em;
-  margin: 0 2em;
+  margin-left: 2em;
   height: 100%;
   max-width: 890px;
   position: relative;
