@@ -15,7 +15,7 @@ body {
   height: 100%;
   margin: 0;
   color: #0b1013;
-  font-size: 16px;
+  font-size: 14px;
 }
 @media screen and (max-width: 480px) {
   body {
@@ -314,7 +314,7 @@ h2.article-head {
   left: 0;
   bottom: 0;
   width: 100%;
-  border-bottom: 1px solid #0b1013;
+  border-bottom: 1px solid #6e6969;
   -webkit-transform: scaleY(0.5);
   transform: scaleY(0.5);
 }
@@ -329,13 +329,13 @@ h2.article-head {
   padding: 1em 0;
   margin: 0 auto;
   max-width: 850px;
-  border-top: 1px solid #0b1013;
+  border-top: 1px solid #6e6969;
   background-color: #fff;
   text-align: center;
   font-size: 0.9em;
 }
 .copyright {
-  color: #e3e3e3;
+  color: #6e6969;
   line-height: 1.5;
 }
 .guide-pager {
@@ -404,7 +404,7 @@ h2.article-head {
   margin: 1em 0;
   font-size: 1.3em;
   padding-bottom: 0.3em;
-  border-bottom: 1px solid #0b1013;
+  border-bottom: 1px solid #6e6969;
 }
 .markdown-content h4,
 .article-summary h4 {
@@ -485,7 +485,7 @@ h2.article-head {
   background-color: #0b1013;
   border-top-width: 1px;
   border-top-style: solid;
-  border-top-color: #0b1013;
+  border-top-color: #6e6969;
 }
 .markdown-content > table thead th,
 .article-summary > table thead th {
@@ -507,7 +507,7 @@ h2.article-head {
 .markdown-content hr,
 .article-summary hr {
   border: none;
-  border-bottom: 1px dashed #0b1013;
+  border-bottom: 1px dashed #6e6969;
   margin: 30px 0;
 }
 #tag-cloud {
@@ -749,7 +749,7 @@ h2.article-head {
   height: 100%;
   display: block;
   padding: 20px;
-  border: 1px solid #0b1013;
+  border: 1px solid #6e6969;
   border-radius: 4px;
   color: #0b1013;
   transition: border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
@@ -805,7 +805,7 @@ h2.article-head {
 }
 .catalog-container .toc-main {
   padding-left: 20px;
-  border-left: 1px solid #0b1013;
+  border-left: 1px solid #6e6969;
   width: 280px;
   box-sizing: border-box;
 }
@@ -844,7 +844,7 @@ h2.article-head {
   width: 100%;
   padding-top: 1.5em;
   margin-top: 1.5em;
-  border-top: 1px dashed #0b1013;
+  border-top: 1px dashed #6e6969;
   font-weight: 600;
 }
 .nav-container:after,
