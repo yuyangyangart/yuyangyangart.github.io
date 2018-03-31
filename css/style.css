@@ -196,7 +196,7 @@ h2.article-head {
   color: #0b1013;
 }
 .fixed-header .menu .icon-bar {
-  background-color: #e3e3e3;
+  background-color: #0b1013;
 }
 .fixed-header .item-link {
   color: #0b1013;
@@ -226,7 +226,7 @@ h2.article-head {
   align-items: center;
   float: left;
   font-weight: 500;
-  color: #fff;
+  color: #0b1013;
   font-size: 1.5em;
   line-height: 40px;
 }
@@ -248,7 +248,7 @@ h2.article-head {
   height: 40px;
   line-height: 40px;
   text-decoration: none;
-  color: #fff;
+  color: #0b1013;
   padding-bottom: 3px;
 }
 .item-link:hover {
@@ -270,7 +270,7 @@ h2.article-head {
   height: 2px;
   border-radius: 1px;
   margin-top: 4px;
-  background-color: #fff;
+  background-color: #0b1013;
 }
 @media screen and (max-width: 480px) {
   .menu {
@@ -404,7 +404,7 @@ h2.article-head {
   margin: 1em 0;
   font-size: 1.3em;
   padding-bottom: 0.3em;
-  border-bottom: 1px solid #6e6969;
+  border-bottom: 1px solid #e1e1e1;
 }
 .markdown-content h4,
 .article-summary h4 {
