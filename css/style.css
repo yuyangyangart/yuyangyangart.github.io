@@ -47,8 +47,8 @@ pre {
   transform: unset !important;
 }
 .app-body {
-  padding-top: 3em;
-  margin-left: 2em;
+  padding: 2.5em 1em;
+  margin: 0 auto;
   height: 100%;
   max-width: 890px;
   position: relative;
