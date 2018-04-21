@@ -186,6 +186,7 @@ h2.article-head {
   width: 100%;
   z-index: 200;
   transition: background 0.5s;
+  box-shadow: rgba(14,14,14,0.26) 0px 0px 3px;
 }
 .fixed-header {
   position: fixed;
