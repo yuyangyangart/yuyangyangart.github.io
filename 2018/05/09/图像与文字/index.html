@@ -10,7 +10,7 @@
   
   <title>
     
-      YU YANG
+      图像与文字 | YU YANG
     
   </title>
   <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -147,74 +147,99 @@
   </div>
 </header>
 
-    <main class="app-body">
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/yuyangyangart.github.io/2018/05/09/图像与文字/">图像与文字</a>
-      </h2>
-      
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/yuyangyangart.github.io/2018/04/16/水管下的人/">《水管下的人》</a>
-      </h2>
-      
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/yuyangyangart.github.io/2018/04/14/《泉》/">《泉》</a>
-      </h2>
-      
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/yuyangyangart.github.io/2018/04/13/打包计划/">《打包计划》</a>
-      </h2>
-      
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/yuyangyangart.github.io/2018/03/30/绘画/">Painting</a>
-      </h2>
-      
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/yuyangyangart.github.io/2018/03/24/壁虎漫步/">《壁虎漫步》</a>
-      </h2>
-      
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/yuyangyangart.github.io/2018/03/22/风景无言以对/">《风景无言以对》</a>
-      </h2>
-      
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/yuyangyangart.github.io/2018/02/15/更加流行的大卫/">《更加流行的大卫》</a>
-      </h2>
-      
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/yuyangyangart.github.io/2017/08/24/A-Knife-Journey/">《A Knife Journey》</a>
-      </h2>
-      
-    </article>
-  
-  
+    
+<main class="app-body flex-box">
+  <!-- Article START -->
+  <article class="post-article">
+    <section class="markdown-content"><p><br><br>我通过这个作品试图将美术史中已经达成共识的图像转化为可书写的语言，于是我把杜尚的作品《泉》转化为文字，在文档中打了出来。</p>
+<video src="http://p60zd6i25.bkt.clouddn.com/%E6%96%B0%E5%BB%BA%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3%20-%20%E8%AE%B0%E4%BA%8B%E6%9C%AC%202018_5_9%2016_48_06.mp4" controls="controls" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;"><br>your browser does not support the video tag<br></video></section>
+    <!-- Tags START -->
+    
+  <!--打赏-->
+  <!-- Article END -->
 </main>
+<script>
+  (function () {
+    var url = 'http://yuyang.red/myblog/2018/05/09/图像与文字/';
+    var banner = ''
+    if (banner !== '' && banner !== 'undefined' && banner !== 'null') {
+      $('#article-banner').css({
+        'background-image': 'url(' + banner + ')'
+      })
+    } else {
+      $('#article-banner').geopattern(url)
+    }
+    $('.header').removeClass('fixed-header')
 
+     // error image
+    $(".markdown-content img").on('error', function() {
+      $(this).attr('src', 'http://file.muyutech.com/error-img.png')
+      $(this).css({
+        'cursor': 'default'
+      })
+    })
+
+    // zoom image
+    $(".markdown-content img").on('click', function() {
+      var src = $(this).attr('src')
+      if (src !== 'http://file.muyutech.com/error-img.png') {
+        var imageW = $(this).width()
+        var imageH = $(this).height()
+        
+        var zoom = ($(window).width() * 0.95 / imageW).toFixed(2)
+        zoom = zoom < 1 ? 1 : zoom
+        zoom = zoom > 2 ? 2 : zoom
+        var transY = (($(window).height() - imageH) / 2).toFixed(2)
+
+        $('body').append('<div class="image-view-wrap"><div class="image-view-inner"><img src="'+ src +'" /></div></div>')
+        $('.image-view-wrap').addClass('wrap-active')
+        $('.image-view-wrap img').css({
+          'width': `${imageW}`,
+          'transform': `translate3d(0, ${transY}px, 0) scale3d(${zoom}, ${zoom}, 1)`
+        })
+        $('html').css('overflow', 'hidden')
+
+        $('.image-view-wrap').on('click', function() {
+          $(this).remove()
+          $('html').attr('style', '')
+        })
+      }
+    })
+
+    // qrcode
+    var qr = new QRious({
+      element: document.getElementById('share-qrcode'),
+      value: document.location.href
+    });
+
+    // gitment
+    var gitmentConfig = "";
+    if (gitmentConfig !== 'undefined') {
+      var gitment = new Gitment({
+        id: "图像与文字",
+        owner: "",
+        repo: "",
+        oauth: {
+          client_id: "",
+          client_secret: ""
+        },
+        theme: {
+          render(state, instance) {
+            const container = document.createElement('div')
+            container.lang = "en-US"
+            container.className = 'gitment-container gitment-root-container'
+            container.appendChild(instance.renderHeader(state, instance))
+            container.appendChild(instance.renderEditor(state, instance))
+            container.appendChild(instance.renderComments(state, instance))
+            container.appendChild(instance.renderFooter(state, instance))
+            return container;
+          }
+        }
+      })
+      gitment.render(document.getElementById('comments'))
+    }
+  })();
+</script>
 
     
     <footer class="app-footer">
