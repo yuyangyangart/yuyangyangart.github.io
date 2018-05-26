@@ -441,7 +441,7 @@
 }
 html {
   height: 100%;
-  border-top: 2px solid #383838;
+  border-top: 2px solid #009;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -449,7 +449,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  color: #383838;
+  color: #009;
   font-weight: 400;
   font-size: 14px;
   font-family: "Menlo", "Meslo LG", monospace;
@@ -474,9 +474,9 @@ body {
   -webkit-hyphens: manual;
 }
 .content a {
-  color: #383838;
+  color: #009;
   text-decoration: none;
-  background-image: linear-gradient(transparent, transparent 5px, #383838 5px, #383838);
+  background-image: linear-gradient(transparent, transparent 5px, #009 5px, #009);
   background-position: bottom;
   background-size: 100% 6px;
   background-repeat: repeat-x;
@@ -563,7 +563,7 @@ body {
 #header .h1 {
   margin-top: 0;
   margin-bottom: 0;
-  color: #383838;
+  color: #009;
   letter-spacing: 0.01em;
   font-weight: 700;
   font-style: normal;
@@ -803,7 +803,7 @@ body {
   display: none;
 }
 #header-post #toc .toc-level-2 {
-  color: #383838;
+  color: #009;
   font-size: 0.8rem;
 }
 #header-post #toc .toc-level-2:before {
@@ -975,7 +975,7 @@ body {
   display: none;
 }
 #footer-post #toc-footer .toc-level-2 {
-  color: #383838;
+  color: #009;
   font-size: 0.8rem;
 }
 #footer-post #toc-footer .toc-level-2:before {
@@ -1263,14 +1263,14 @@ article .content .caption {
   text-align: center;
 }
 .pagination .page-number {
-  color: #383838;
+  color: #009;
   font-size: 0.8rem;
 }
 .pagination a {
   padding: 4px 6px;
   border-radius: 5px;
   background-image: none;
-  color: #383838;
+  color: #009;
   text-decoration: none;
 }
 .pagination a:hover {
@@ -1286,7 +1286,7 @@ article .content .caption {
   border: solid 1px #8c8c8c;
   border-radius: 5px;
   background-color: #fff;
-  color: #383838;
+  color: #009;
   font-size: 1.2rem;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1303,7 +1303,7 @@ article .content .caption {
 }
 #search-result a.search-result-title {
   background-image: none;
-  color: #383838;
+  color: #009;
   text-transform: capitalize;
   font-weight: bold;
   line-height: 1.2;
@@ -1323,7 +1323,7 @@ article .content .caption {
 .search-no-result {
   display: none;
   padding-bottom: 0.5em;
-  color: #383838;
+  color: #009;
 }
 .highlight {
   color: #585260;
